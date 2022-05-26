@@ -9,6 +9,22 @@ public class ClubNautico {
 		
 	}
 	
+	public int getIDClub() {
+		return IDClub;
+	}
+
+	public void setIDClub(int iDClub) {
+		IDClub = iDClub;
+	}
+
+	public String getNombre() {
+		return Nombre;
+	}
+
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+
 	public static void main(String[] args) {
 		Socio socio = new Socio("Juan", "Melipilla", "16587698-0", "24-03-2020", "99003456");
 		socio.imprimirDatos();

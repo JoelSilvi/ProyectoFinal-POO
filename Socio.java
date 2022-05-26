@@ -16,6 +16,46 @@ public class Socio extends ClubNautico {
 	}
 	
 	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public String getRUT() {
+		return RUT;
+	}
+
+	public void setRUT(String rUT) {
+		RUT = rUT;
+	}
+
+	public String getFechaIngresoClub() {
+		return fechaIngresoClub;
+	}
+
+	public void setFechaIngresoClub(String fechaIngresoClub) {
+		this.fechaIngresoClub = fechaIngresoClub;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
 	@Override
 	public void imprimirDatos() {
 		System.out.println("El señor: " + nombre + " tiene dirección en: " + direccion + " Su RUT es: " + RUT + " \ningresó el: " +

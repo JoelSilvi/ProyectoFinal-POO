@@ -7,6 +7,38 @@ public class Amarre extends ClubNautico {
 		
 	}
 	
+	public String getNumeroAmarre() {
+		return numeroAmarre;
+	}
+
+	public void setNumeroAmarre(String numeroAmarre) {
+		this.numeroAmarre = numeroAmarre;
+	}
+
+	public String getLecturaContadorAgua() {
+		return lecturaContadorAgua;
+	}
+
+	public void setLecturaContadorAgua(String lecturaContadorAgua) {
+		this.lecturaContadorAgua = lecturaContadorAgua;
+	}
+
+	public String getLecturaContadorLuz() {
+		return lecturaContadorLuz;
+	}
+
+	public void setLecturaContadorLuz(String lecturaContadorLuz) {
+		this.lecturaContadorLuz = lecturaContadorLuz;
+	}
+
+	public String getServicioDeMantenimiento() {
+		return servicioDeMantenimiento;
+	}
+
+	public void setServicioDeMantenimiento(String servicioDeMantenimiento) {
+		this.servicioDeMantenimiento = servicioDeMantenimiento;
+	}
+
 	public Amarre(String _numeroAmarre, String _lecturaContadorAgua, String _lecturaContadorLuz, String _servicioDeMantenimiento) {
 		this.numeroAmarre = _numeroAmarre;
 		this.lecturaContadorAgua = _lecturaContadorAgua;

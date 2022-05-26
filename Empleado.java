@@ -13,6 +13,67 @@ public class Empleado extends ClubNautico {
 		this.numCelular = _numCelular;
 		this.RUT = _RUT;
 	}
+	
+
+	public int getIDEmpleado() {
+		return IDEmpleado;
+	}
+
+
+	public void setIDEmpleado(int iDEmpleado) {
+		IDEmpleado = iDEmpleado;
+	}
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+	public String getApellido() {
+		return apellido;
+	}
+
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+
+	public String getNumCelular() {
+		return numCelular;
+	}
+
+
+	public void setNumCelular(String numCelular) {
+		this.numCelular = numCelular;
+	}
+
+
+	public String getRUT() {
+		return RUT;
+	}
+
+
+	public void setRUT(String rUT) {
+		RUT = rUT;
+	}
+
 
 	public void imprimirDatos() {
 		System.out.println(

@@ -15,6 +15,70 @@ public class Embarcacion extends Socio {
 		
 	}
 	
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public String getFechaAmarre() {
+		return fechaAmarre;
+	}
+
+	public void setFechaAmarre(String fechaAmarre) {
+		this.fechaAmarre = fechaAmarre;
+	}
+
+	public int getAlto() {
+		return alto;
+	}
+
+	public void setAlto(int alto) {
+		this.alto = alto;
+	}
+
+	public int getAncho() {
+		return ancho;
+	}
+
+	public void setAncho(int ancho) {
+		this.ancho = ancho;
+	}
+
+	public int getLargo() {
+		return largo;
+	}
+
+	public void setLargo(int largo) {
+		this.largo = largo;
+	}
+
+	public int getDimension() {
+		return dimension;
+	}
+
+	public void setDimension(int dimension) {
+		this.dimension = dimension;
+	}
+
 	@Override
 	
 	public void imprimirDatos() {
