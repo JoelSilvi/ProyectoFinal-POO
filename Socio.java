@@ -1,11 +1,17 @@
 package proyectoFinal;
 
+//Se crea clase con sus atributos
+
 public class Socio extends ClubNautico {
 	private String nombre, direccion, RUT, fechaIngresoClub, telefono;
+	
+	//Se crea constructor por defecto
 	
 	public Socio() {
 		
 	}
+	
+	//Se crea constructor con parámetros
 	
 	public Socio(String _nombre, String _direccion, String _RUT, String _fechaIngresoClub, String _telefono) {
 		this.nombre = _nombre;
@@ -15,6 +21,8 @@ public class Socio extends ClubNautico {
 		this.telefono = _telefono;
 	}
 	
+	
+	//Se generan los getters y setters
 	
 	public String getNombre() {
 		return nombre;
@@ -55,6 +63,8 @@ public class Socio extends ClubNautico {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
+	
+	//Se realiza uso del método de la superclase
 
 	@Override
 	public void imprimirDatos() {

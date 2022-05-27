@@ -1,8 +1,12 @@
 package proyectoFinal;
 
+//Se crea clase con sus atributos
+
 public class Instalacion extends ClubNautico {
 	private int idInstalacion;
 	private String administrador, ciudad, direccion, telefono;
+	
+	//Se crea constructor con parámetros
 
 	public Instalacion (int _idInstalacion, String _administrador, String _ciudad, String _direccion, String _telefono) {
 		this.idInstalacion = _idInstalacion;
@@ -11,6 +15,8 @@ public class Instalacion extends ClubNautico {
 		this.direccion = _direccion;
 		this.telefono = _telefono; 
 	}
+	
+	//Se generan los getters y setters
 	
 	public int getIdInstalacion() {
 		return idInstalacion;
@@ -51,6 +57,9 @@ public class Instalacion extends ClubNautico {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
+	
+	
+	//Se realiza uso del método de la superclase
 
 	@Override
 	public void imprimirDatos() {

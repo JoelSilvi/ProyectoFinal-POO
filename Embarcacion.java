@@ -1,20 +1,31 @@
 package proyectoFinal;
 
+//Se crea clase con sus atributos
+
 public class Embarcacion extends Socio {
-	private String matricula, nombre, tipo, fechaAmarre;
+	private String matricula, nombre, tipo;
 	private int alto, ancho, largo, dimension;
+
+	//Se crea constructor por defecto
+	public Embarcacion() {
+
+	}
 	
-	public Embarcacion(String _matricula, String _nombre, String _tipo, String _fechaAmarre, int _alto, int _ancho, int _largo) {
+	//Se crea constructor con parámetros
+
+	public Embarcacion(String _matricula, String _nombre, String _tipo, int _alto, int _ancho,
+			int _largo) {
 		this.matricula = _matricula;
 		this.nombre = _nombre;
 		this.tipo = _tipo;
-		this.fechaAmarre = _fechaAmarre;
 		this.alto = _alto;
 		this.ancho = _ancho;
 		this.largo = _largo;
-		
+
 	}
 	
+	// Se generan los getters y setters
+
 	public String getMatricula() {
 		return matricula;
 	}
@@ -38,14 +49,7 @@ public class Embarcacion extends Socio {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-
-	public String getFechaAmarre() {
-		return fechaAmarre;
-	}
-
-	public void setFechaAmarre(String fechaAmarre) {
-		this.fechaAmarre = fechaAmarre;
-	}
+	
 
 	public int getAlto() {
 		return alto;
@@ -78,19 +82,16 @@ public class Embarcacion extends Socio {
 	public void setDimension(int dimension) {
 		this.dimension = dimension;
 	}
+	
+	//Se realiza uso del método de la superclase
 
 	@Override
-	
 	public void imprimirDatos() {
 		this.dimension = alto * ancho * largo;
-		System.out.println("El número de matrícula es: " + matricula + " el nombre es: " + nombre + " el tipo de embarcacion es: " 
-				+ tipo + "\nfecha de amarre : " + fechaAmarre + " el alto es: " + alto + " el ancho es: " + ancho +
-				" el largo es: " + largo + " la dimensión total es de: " + dimension);
-		
+		System.out.println("El número de matrícula es: " + matricula + " el nombre es: " + nombre
+				+ " el tipo de embarcacion es: " + tipo + "\nel alto es: " + alto
+				+ " el ancho es: " + ancho + " el largo es: " + largo + " la dimensión total es de: " + dimension);
+
 	}
-		
-	
-	
+
 }
-
-

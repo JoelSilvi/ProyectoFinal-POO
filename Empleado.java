@@ -1,8 +1,12 @@
 package proyectoFinal;
 
+//Se crea clase con sus atributos
+
 public class Empleado extends ClubNautico {
 	private int IDEmpleado;
 	private String nombre, apellido, direccion, numCelular, RUT;
+	
+	//Se crea constructor con parámetros
 
 	public Empleado(int _IDEmpleado, String _nombre, String _apellido, String _direccion, String _numCelular,
 			String _RUT) {
@@ -15,6 +19,8 @@ public class Empleado extends ClubNautico {
 	}
 	
 
+	//Se generan los getters y setters
+	
 	public int getIDEmpleado() {
 		return IDEmpleado;
 	}
@@ -75,6 +81,9 @@ public class Empleado extends ClubNautico {
 	}
 
 
+	//Se realiza uso del método de la superclase
+	
+	@Override
 	public void imprimirDatos() {
 		System.out.println(
 				"El ID del empleado es: " + IDEmpleado + " el nombre es: " + nombre + " el apellido es : " + apellido
